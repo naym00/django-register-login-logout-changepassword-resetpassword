@@ -5,6 +5,7 @@
 - [x] In your created folder generate a venv [python -m venv venv]
 - [x] venv\Scripts\activate.bat 
 - [x] git clone https://github.com/naym00/django-register-login-logout-changepassword-resetpassword.git
+- [x]  cd django-register-login-logout-changepassword-resetpassword
 - [x] pip install -r requirements.txt
 - [x] python manage.py migrate
 - [x] python manage.py makemigrations
