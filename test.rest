@@ -1,0 +1,52 @@
+POST http://127.0.0.1:8000/api/register/
+Content-Type: application/json
+
+{ "username": "naym", "email": "naymhsain00@gmail.com", "password": "naym" }
+
+###
+
+POST http://127.0.0.1:8000/api/login/
+Content-Type: application/json
+
+{"username": "naym", "password": "147ASD#$%"}
+
+###
+
+POST http://127.0.0.1:8000/api/logout/
+Content-Type: application/json
+Authorization: Token 4e39419636f397bc50c44874dcaa0963b2d65e523968af9012df08f7e5814bdc
+
+{}
+
+###
+
+PUT http://127.0.0.1:8000/api/change-password/
+Content-Type: application/json
+Authorization: Token 4e39419636f397bc50c44874dcaa0963b2d65e523968af9012df08f7e5814bdc
+
+{"old_password": "naym1", "new_password": "naym"}
+
+###
+
+POST  http://127.0.0.1:8000/api/password_reset/
+Content-Type: application/json
+
+{"email": "naymhsain00@gmail.com"}
+
+###
+
+POST  http://127.0.0.1:8000/api/password_reset/confirm/
+Content-Type: application/json
+
+{"password": "147ASD#$%", "token": "ae610c30c9912"}
+
+###
+
+GET http://127.0.0.1:8000/api/home/
+Content-Type: application/json
+Authorization: Token 4e39419636f397bc50c44874dcaa0963b2d65e523968af9012df08f7e5814bdc
+
+
+{}
+
+###
